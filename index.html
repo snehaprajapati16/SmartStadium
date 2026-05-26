@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS - Smart Physical Event Experience</title>
+    
+    <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icon Library CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. FUTURISTIC LOADING SCREEN -->
+    <div id="loading-screen">
+        <div class="loader-logo">OASIS</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- AMBIENT NEON GLOW SHAPES (BACKGROUND EFFECTS) -->
+    <div class="ambient-glows">
+        <div class="glow-shape glow-1"></div>
+        <div class="glow-shape glow-2"></div>
+        <div class="glow-shape glow-3"></div>
+    </div>
+
+    <!-- 2. STICKY GLASSMORPHIC HEADER / NAVBAR -->
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-satellite-dish"></i>
+                <span>OASIS</span>
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#dashboard">Live Dashboard</a></li>
+                <li><a href="#map">Stadium Map</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQs</a></li>
+            </ul>
+            
+            <!-- Glowing Call To Action Button -->
+            <a href="#dashboard" class="nav-cta">
+                <i class="fa-solid fa-desktop"></i> Open Demo
+            </a>
+            
+            <!-- Mobile Menu Toggle Button (Hamburger) -->
+            <button class="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 3. HERO / LANDING SECTION -->
+    <section id="hero" class="hero-container">
+        <!-- Hero Details (Left Column) -->
+        <div class="hero-content fade-up">
+            <div class="hero-tag">
+                <i class="fa-solid fa-circle-dot"></i> Live Event Coordination Active
+            </div>
+            <h1 class="hero-title">
+                Reinventing the <br>
+                <span class="gradient-text">Live Stadium Experience</span>
+            </h1>
+            <!-- Typing effect will run here via JavaScript -->
+            <p class="hero-subtitle" id="typing-text"></p>
+            
+            <div class="hero-actions">
+                <a href="#features" class="neon-btn btn-primary">
+                    Explore Features <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#map" class="neon-btn btn-secondary">
+                    View Live Map <i class="fa-solid fa-map-location-dot"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Interactive 3D Stadium Hologram Mockup (Right Column) -->
+        <div class="hero-visual fade-up" style="animation-delay: 0.2s;">
+            <!-- Outer rotating design -->
+            <div class="hologram-container">
+                <div class="hologram-ring ring-lg"></div>
+                <div class="hologram-ring ring-md"></div>
+                <div class="hologram-ring ring-sm"></div>
+                <div class="hologram-core"></div>
+                <div class="hologram-stadium-mock"></div>
+                <div class="hologram-beam"></div>
+            </div>
+            
+            <!-- Floating cards representing live feedback data (with parallax mouse effect) -->
+            <div class="hero-floating-card glass-panel card-top-right" data-speed="2">
+                <div class="floating-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="floating-info">
+                    <h4>Gate 3 Capacity</h4>
+                    <p>Flow Rate: Optimal (95%)</p>
+                </div>
+            </div>
+            
+            <div class="hero-floating-card glass-panel card-bottom-left purple" data-speed="-2">
+                <div class="floating-icon purple">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+                <div class="floating-info">
+                    <h4>Smart Queues</h4>
+                    <p>Wait Time: &lt; 3 Mins</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURES GRID SECTION -->
+    <section id="features" class="fade-up">
+        <div class="section-header">
+            <span class="section-tag">Next-Gen Services</span>
+            <h2 class="section-title">Smart Stadium Ecosystem</h2>
+            <p class="section-subtitle">Six intelligent modules designed to remove crowd friction, optimize waiting times, and coordinate security.</p>
+        </div>
+        
+        <div class="features-grid">
+            <!-- Feature Card 1 -->
+            <div class="feature-card glass-panel">
+                <div class="feature-icon-wrapper">
+                    <i class="fa-solid fa-users-viewfinder"></i>
+                </div>
+                <h3>AI Crowd Tracking</h3>
+                <p>Advanced sensor clusters map real-time crowd density, warning stadium coordinators of bottleneck issues before congestion happens.</p>
+            </div>
+            
+            <!-- Feature Card 2 -->
+            <div class="feature-card glass-panel">
+                <div class="feature-icon-wrapper">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h3>Smart Queue System</h3>
+                <p>Virtual reservation lines for food, washrooms, and exit gates. Get notified on your mobile app exactly when it is your turn.</p>
+            </div>
+            
+            <!-- Feature Card 3 -->
+            <div class="feature-card glass-panel">
+                <div class="feature-icon-wrapper">
+                    <i class="fa-solid fa-location-arrow"></i>
+                </div>
+                <h3>Live Navigation</h3>
+                <p>Interactive indoor routing leads you straight to your seat, nearest parking spot, or food stall with active congestion avoiding pathing.</p>
+            </div>
+            
+            <!-- Feature Card 4 -->
+            <div class="feature-card glass-panel">
+                <div class="feature-icon-wrapper">
+                    <i class="fa-solid fa-kit-medical"></i>
+                </div>
+                <h3>Emergency SOS</h3>
+                <p>Single-tap help triggers medical or security response to your precise seat coordinates while lighting up emergency exit guidance paths.</p>
+            </div>
+            
+            <!-- Feature Card 5 -->
+            <div class="feature-card glass-panel">
+                <div class="feature-icon-wrapper">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <h3>Real-Time Updates</h3>
+                <p>Receive live stadium notifications regarding gate conditions, customized event progress, safety announcements, and parking alerts.</p>
+            </div>
+            
+            <!-- Feature Card 6 -->
+            <div class="feature-card glass-panel">
+                <div class="feature-icon-wrapper">
+                    <i class="fa-solid fa-bowl-food"></i>
+                </div>
+                <h3>Smart Food Ordering</h3>
+                <p>Browse local stadium vendor menus, place orders, make transactions securely, and pickup items from dedicated fast-lanes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. LIVE DASHBOARD SIMULATOR SECTION -->
+    <section id="dashboard" class="fade-up">
+        <div class="section-header">
+            <span class="section-tag">Interactive Simulation</span>
+            <h2 class="section-title">Operations Control Center</h2>
+            <p class="section-subtitle">Simulate real-time stadium metrics. Toggle scenarios using the simulator controls below to see OASIS respond.</p>
+        </div>
+        
+        <div class="dashboard-grid">
+            <!-- Left Panel: Live Statistics (Dials & Progress) -->
+            <div class="dashboard-panel glass-panel">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <i class="fa-solid fa-chart-line"></i> Live Stadium Telemetry
+                    </div>
+                    <div class="live-status-indicator">
+                        <i class="fa-solid fa-circle"></i> Live Connected
+                    </div>
+                </div>
+                
+                <div class="dashboard-stats">
+                    <!-- Stat 1: Crowd Density -->
+                    <div class="stat-box">
+                        <span class="stat-box-label">Average Crowd Density</span>
+                        <span class="stat-box-value" id="dash-density">42%</span>
+                        <div class="stat-progress-container">
+                            <div class="stat-progress-bar" id="density-bar" style="width: 42%;"></div>
+                        </div>
+                        <div class="stat-footer-text">
+                            <span>Status: Optimal Flow</span>
+                            <span>Target: &lt;65%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat 2: Wait Times -->
+                    <div class="stat-box">
+                        <span class="stat-box-label">Concourse Wait Time</span>
+                        <span class="stat-box-value" id="dash-wait">3.4 Mins</span>
+                        <div class="stat-progress-container">
+                            <div class="stat-progress-bar" id="wait-bar" style="width: 34%;"></div>
+                        </div>
+                        <div class="stat-footer-text">
+                            <span>Virtual Queues: Active</span>
+                            <span>Limit: 10m</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat 3: Occupancy -->
+                    <div class="stat-box">
+                        <span class="stat-box-label">Arena Occupancy</span>
+                        <span class="stat-box-value" id="dash-occupancy">32,840</span>
+                        <div class="stat-progress-container">
+                            <div class="stat-progress-bar" id="occupancy-bar" style="width: 65%;"></div>
+                        </div>
+                        <div class="stat-footer-text">
+                            <span>Capacity: 50,000</span>
+                            <span>Percent: 65%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat 4: Security Status -->
+                    <div class="stat-box">
+                        <span class="stat-box-label">Emergency SOS Network</span>
+                        <span class="stat-box-value" id="dash-sos" style="color: var(--neon-green);">SECURE</span>
+                        <div class="stat-progress-container">
+                            <div class="stat-progress-bar" id="sos-bar" style="width: 100%; background: var(--neon-green);"></div>
+                        </div>
+                        <div class="stat-footer-text">
+                            <span>Alert Nodes: 240/240</span>
+                            <span>Response Team: Ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Panel: Live Feed / Terminal Alerts -->
+            <div class="feed-panel glass-panel">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <i class="fa-solid fa-rectangle-list"></i> Live Announcements & Alerts
+                    </div>
+                </div>
+                
+                <div class="feed-container" id="alerts-feed">
+                    <!-- Dynamic feed items injected here -->
+                    <div class="feed-item info">
+                        <div class="feed-item-icon"><i class="fa-solid fa-door-open"></i></div>
+                        <div class="feed-item-content">
+                            <div class="feed-item-title">Main Entry Gates Open</div>
+                            <div class="feed-item-desc">All stadium entry gates are active. Security lines moving swiftly.</div>
+                            <div class="feed-item-time">10 Mins Ago</div>
+                        </div>
+                    </div>
+                    
+                    <div class="feed-item info">
+                        <div class="feed-item-icon"><i class="fa-solid fa-wifi"></i></div>
+                        <div class="feed-item-content">
+                            <div class="feed-item-title">Stadium Mesh Wi-Fi Active</div>
+                            <div class="feed-item-desc">Guests can connect to "OASIS-FREE-WIFI" for local seat navigation.</div>
+                            <div class="feed-item-time">25 Mins Ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interactive Simulator Console -->
+            <div class="simulation-console glass-panel">
+                <div class="console-label">
+                    <i class="fa-solid fa-sliders"></i> Event Simulation Deck
+                </div>
+                <div class="console-btns">
+                    <button class="btn-console" onclick="simulateCrowdSpike()">
+                        <i class="fa-solid fa-users-rays"></i> Crowd Spike
+                    </button>
+                    <button class="btn-console" onclick="simulatePeakTime()">
+                        <i class="fa-solid fa-hourglass-half"></i> Peak Halftime Wait
+                    </button>
+                    <button class="btn-console alert-btn" onclick="triggerEmergencySOS()">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Trigger SOS
+                    </button>
+                    <button class="btn-console" onclick="resetSimulation()" style="border-color: rgba(255,255,255,0.2);">
+                        <i class="fa-solid fa-rotate"></i> Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. INTERACTIVE STADIUM MAP SECTION -->
+    <section id="map" class="fade-up">
+        <div class="section-header">
+            <span class="section-tag">Interactive Venue Map</span>
+            <h2 class="section-title">Simulate Seat Navigation</h2>
+            <p class="section-subtitle">Click on different stadium zones to check live occupancy. Use the action panel to simulate navigation routes and evacuation pathways.</p>
+        </div>
+        
+        <div class="map-container">
+            <!-- Left Column: CSS Stadium Map Layout -->
+            <div class="stadium-wrapper glass-panel">
+                <div class="stadium-map">
+                    <div class="stadium-outer-ring" id="map-ring">
+                        <!-- Stadium Sectors -->
+                        <div class="zone-sector zone-north" data-zone="North Zone" data-occupancy="75%" data-status="Moderate" data-price="$45" data-attraction="Main Concert Stage & Food Hub A">
+                            <span>NORTH ZONE</span>
+                        </div>
+                        <div class="zone-sector zone-east" data-zone="East Zone" data-occupancy="92%" data-status="Crowded" data-price="$80" data-attraction="VIP Lounges & Gate 1 Entry">
+                            <span>EAST ZONE</span>
+                        </div>
+                        <div class="zone-sector zone-south" data-zone="South Zone" data-occupancy="40%" data-status="Clear" data-price="$35" data-attraction="Family Play Area & Restrooms">
+                            <span>SOUTH ZONE</span>
+                        </div>
+                        <div class="zone-sector zone-west" data-zone="West Zone" data-occupancy="62%" data-status="Optimal" data-price="$60" data-attraction="Official Fan Shop & Parking B Link">
+                            <span>WEST ZONE</span>
+                        </div>
+                        
+                        <!-- Stadium Pitch -->
+                        <div class="pitch">
+                            <div class="pitch-line"></div>
+                            <div class="pitch-circle"></div>
+                        </div>
+
+                        <!-- Evacuation Exit Markers (Hidden initially, display when simulating exit routes) -->
+                        <div class="emergency-exit-marker exit-north" id="exit-n"><i class="fa-solid fa-person-running"></i></div>
+                        <div class="emergency-exit-marker exit-south" id="exit-s"><i class="fa-solid fa-person-running"></i></div>
+                        <div class="emergency-exit-marker exit-east" id="exit-e"><i class="fa-solid fa-person-running"></i></div>
+                        <div class="emergency-exit-marker exit-west" id="exit-w"><i class="fa-solid fa-person-running"></i></div>
+
+                        <!-- Wayfinding Glowing Navigation Path Overlay (Simulated via SVG/CSS borders) -->
+                        <div class="wayfinding-path" id="nav-path-line"></div>
+
+                        <!-- Parking lots (Simulated overlays) -->
+                        <div class="parking-spot parking-a" id="park-a">P1</div>
+                        <div class="parking-spot parking-b" id="park-b">P2</div>
+                        <div class="parking-spot parking-c" id="park-c">P3</div>
+                        <div class="parking-spot parking-d" id="park-d">P4</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Interactive Details Panel -->
+            <div class="map-details glass-panel">
+                <div>
+                    <div class="map-details-header">
+                        <span class="selected-zone-title" id="zone-display-title">Select a Zone</span>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Click any sector on the stadium layout to inspect telemetry.</p>
+                    </div>
+                    
+                    <ul class="map-stats-list">
+                        <li class="map-stats-item">
+                            <span>Sector Capacity:</span>
+                            <span id="zone-capacity">-</span>
+                        </li>
+                        <li class="map-stats-item">
+                            <span>Crowd Status:</span>
+                            <span id="zone-status" style="color: var(--neon-blue);">-</span>
+                        </li>
+                        <li class="map-stats-item">
+                            <span>Avg Ticket Price:</span>
+                            <span id="zone-price">-</span>
+                        </li>
+                        <li class="map-stats-item" style="flex-direction: column; gap: 4px;">
+                            <span>Key Venue Points:</span>
+                            <span id="zone-attraction" style="color: var(--text-white); font-weight: normal; font-size: 0.9rem; margin-top: 2px;">-</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Action Simulator Buttons -->
+                <div class="map-actions-wrapper">
+                    <button class="map-btn btn-navigation-sim" id="btn-path-sim" onclick="togglePathSimulation()">
+                        <i class="fa-solid fa-route"></i> Simulate Wayfinding to Seat
+                    </button>
+                    
+                    <button class="map-btn btn-exit-sim" id="btn-exits-sim" onclick="toggleExitsSimulation()">
+                        <i class="fa-solid fa-person-running"></i> Evacuation Exit Guide
+                    </button>
+                    
+                    <button class="map-btn parking-box" id="btn-parking-sim" onclick="toggleParkingSimulation()">
+                        <i class="fa-solid fa-square-parking"></i> Locate Nearest Open Parking
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. HIGHLIGHT STATISTICS SECTION -->
+    <div class="stats-section-bg">
+        <section id="stats" class="stats-grid">
+            <!-- Stat Item 1 -->
+            <div class="stat-item">
+                <div class="stat-number" data-target="40">%</div>
+                <div class="stat-label">Reduced Waiting Time</div>
+                <div class="stat-desc">Through virtual queue scheduling and smart food pre-ordering.</div>
+            </div>
+            
+            <!-- Stat Item 2 -->
+            <div class="stat-item">
+                <div class="stat-number" data-target="60">%</div>
+                <div class="stat-label">Faster Crowd Movement</div>
+                <div class="stat-desc">Utilizing real-time sensor pathing coordinates at exit gates.</div>
+            </div>
+            
+            <!-- Stat Item 3 -->
+            <div class="stat-item">
+                <div class="stat-number" data-target="95">%</div>
+                <div class="stat-label">User Satisfaction</div>
+                <div class="stat-desc">Surveyed users who experienced frictionless entry & navigation.</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 8. REVIEWS / TESTIMONIALS SECTION -->
+    <section id="testimonials" class="fade-up">
+        <div class="section-header">
+            <span class="section-tag">Guest Experiences</span>
+            <h2 class="section-title">What Operators & Fans Say</h2>
+            <p class="section-subtitle">Tested at major concerts and league games, OASIS changes how crowds connect with live events.</p>
+        </div>
+        
+        <div class="testimonials-carousel">
+            <!-- Review 1 -->
+            <div class="testimonial-card glass-panel">
+                <p class="testimonial-quote">
+                    "Halftimes used to be a nightmare of endless lines. With OASIS, I ordered a burger from my seat, got a notification when it was ready, and skipped the line completely. Unbelievable experience."
+                </p>
+                <div class="testimonial-user">
+                    <div class="user-avatar">MK</div>
+                    <div class="user-details">
+                        <h4>Marcus K.</h4>
+                        <p>Season Ticket Holder</p>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Review 2 -->
+            <div class="testimonial-card glass-panel">
+                <p class="testimonial-quote">
+                    "Managing a crowd of 50,000 is complex. The live crowd density heatmaps allowed us to deploy security to Gate A before bottlenecking turned into an issue. It's a game changer for safety."
+                </p>
+                <div class="testimonial-user">
+                    <div class="user-avatar">SR</div>
+                    <div class="user-details">
+                        <h4>Sarah R.</h4>
+                        <p>Stadium Safety Director</p>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Review 3 -->
+            <div class="testimonial-card glass-panel">
+                <p class="testimonial-quote">
+                    "I usually get lost in massive venues, but the active phone navigation path led me right to my gate, section, and seat row. Even exit flow after the match was perfectly streamlined."
+                </p>
+                <div class="testimonial-user">
+                    <div class="user-avatar">DP</div>
+                    <div class="user-details">
+                        <h4>Daniel P.</h4>
+                        <p>Concert Attendee</p>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FAQ ACCORDION SECTION -->
+    <section id="faq" class="fade-up">
+        <div class="section-header">
+            <span class="section-tag">Got Questions?</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about the OASIS event experience framework.</p>
+        </div>
+        
+        <div class="faq-container">
+            <!-- FAQ item 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    How does OASIS track stadium crowd density?
+                    <i class="fa-solid fa-plus faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        OASIS utilizes lightweight sensor arrays positioned at major gates, walkways, and seating blocks. These track flow rates (not personal identities) to build a real-time crowd movement heatmap, helping stadium operators distribute flow.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ item 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do guests need to download a heavy mobile app?
+                    <i class="fa-solid fa-plus faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        No. While a native mobile application is available, OASIS operates on a lightweight WebApp platform accessible by scanning local seat QR codes. This gives users immediate maps, ordering features, and navigation.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ item 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    How does the Emergency SOS function handle alarms?
+                    <i class="fa-solid fa-plus faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        When a guest triggers the SOS button on their phone, the local command center is alerted with their exact seat coordinates. The system immediately pinpoints the closest paramedic team and highlights their escape routes on the live map.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ item 4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is OASIS suitable for smaller physical venues?
+                    <i class="fa-solid fa-plus faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Absolutely. The modular design allows coordinates and routing algorithms to scale from convention halls and theatres up to full-scale professional sports arenas with 80,000+ seats.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. MODERN FOOTER -->
+    <footer>
+        <div class="footer-glow-line"></div>
+        
+        <div class="footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-satellite-dish"></i>
+                    <span>OASIS</span>
+                </a>
+                <p>Creating frictionless, smart, and safe physical experiences for next-generation stadiums and events.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <!-- Links Column -->
+            <div>
+                <h4 class="footer-links-title">Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#hero">Overview</a></li>
+                    <li><a href="#features">Key Features</a></li>
+                    <li><a href="#dashboard">Live Control</a></li>
+                    <li><a href="#map">Interactive Map</a></li>
+                    <li><a href="#faq">Support FAQs</a></li>
+                </ul>
+            </div>
+            
+            <!-- Newsletter Column -->
+            <div class="footer-newsletter">
+                <h4 class="footer-links-title">Stay Updated</h4>
+                <p>Get event-tech insights and updates directly in your inbox.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to OASIS Updates!');">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 OASIS Smart Physical Event Systems. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 11. FLOATING EMERGENCY SOS BUTTON & MODAL -->
+    <button class="floating-sos-btn" id="floating-sos" onclick="triggerFloatingSOS()" aria-label="Trigger Emergency SOS">
+        <i class="fa-solid fa-triangle-exclamation"></i> SOS
+    </button>
+
+    <div class="sos-modal-backdrop" id="sos-modal">
+        <div class="sos-modal-content glass-panel">
+            <div class="sos-modal-header">
+                <i class="fa-solid fa-circle-exclamation alarm-icon"></i>
+                <h3>EMERGENCY SOS ACTIVE</h3>
+            </div>
+            <div class="sos-modal-body">
+                <p>An emergency coordination signal has been broadcast to operations control.</p>
+                <div class="sos-modal-details">
+                    <div><span>Telemetry Node:</span> <strong id="sos-modal-loc">West Sector, Row 14</strong></div>
+                    <div><span>Medical Dispatch:</span> <strong style="color: var(--neon-green);">EN ROUTE (ETA &lt; 2m)</strong></div>
+                </div>
+                <p class="sos-modal-instructions">Please remain at your seat if safe. Evacuation exit guides and paths have been highlighted in green on the stadium map.</p>
+            </div>
+            <div class="sos-modal-footer">
+                <button class="neon-btn btn-primary" onclick="closeSOSModal()" style="width: 100%; justify-content: center; background: var(--neon-pink); box-shadow: 0 4px 15px rgba(255, 0, 127, 0.25);">
+                    Acknowledge & Dismiss
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>
